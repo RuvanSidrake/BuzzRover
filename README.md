@@ -1,5 +1,7 @@
 # BuzzRover
 
+![BuzzRover](docs/images/rover.jpg)
+
 A remote-controlled transport rover that carries honey frames from the apiary to the extraction room at Willow Grove Heritage Bee & Egg Farm in Milton, Ontario. Built by a 10-student team from Abbey Park High School for the 2026 AgRobotics Student Challenge, where it placed 2nd.
 
 A full honey super (9 frames) weighs 60 to 80 lb and was previously moved by hand on a cart. BuzzRover carries the frames in a removable plexiglass box on a skid-steer base, load-tested at 80 lb and demoed on-site at the farm.
@@ -18,6 +20,32 @@ This repo holds the rover's Java control code and the technical document (`docs/
 | Enclosure | Dual-lid 3D-printed ASA electronics hood with water-shedding lips and sliding-rail access |
 | Payload | Removable plexiglass frame box that slides into aluminum side rails, 9-frame spacer |
 | Operator input | PS4 controller on USB port 0 |
+
+## Photos
+
+| | |
+|---|---|
+| ![On-site demo at the farm](docs/images/on-site-demo.jpg) | ![Load test](docs/images/load-test.jpg) |
+| On-site demo at Willow Grove | Load testing with weight plates |
+| ![Early chassis with wiring](docs/images/early-chassis-wiring.jpg) | ![Chassis assembly](docs/images/chassis-assembly.jpg) |
+| Early chassis used to test the drive code | Assembling the aluminum chassis |
+
+### CAD
+
+| | |
+|---|---|
+| ![Frame](docs/images/cad-1-frame.jpg) | ![Frame with hood](docs/images/cad-2-hood.jpg) |
+| Chassis frame | Frame with dual-lid electronics hood |
+| ![Frame box](docs/images/cad-3-frame-box.jpg) | ![Complete](docs/images/cad-4-complete.jpg) |
+| Plexiglass frame box with honey frames | Complete rover with lid |
+| ![Hood lid](docs/images/hood-cad.jpg) | ![Handle](docs/images/handle-cad.jpg) |
+| Hood lid with control panel cutout | Printed lid handle |
+
+### Electrical
+
+![Electrical schematic](docs/images/electrical-schematic.jpg)
+
+The battery pack feeds the Titan Quad through the control panel's master switch and emergency stop. The Titan drives all four motors and reads their encoders, and it talks to the VMX Pi over CAN.
 
 ## Software features
 
